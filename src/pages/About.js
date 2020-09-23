@@ -3,7 +3,7 @@ import LinkBtn from '../components/LinkBtn';
 
 export default function Contact() {
     return (
-        <main className="container mx-auto my-5 rounded">
+        <div className="container mx-auto my-5 rounded">
             <div>
                 <div className="page-header">
                     <h1>About Me:</h1>
@@ -27,6 +27,6 @@ export default function Contact() {
                     </div>
                 </div>
             </div>
-        </main>
+        </div>
     )
 }
