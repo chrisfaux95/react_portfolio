@@ -15,19 +15,19 @@ export default function Navbar() {
             <ul className="navbar-nav navbar-right ml-md-auto">
                 <li className="nav-item mx-1">
                     <a className="nav-link btn btn-dark"
-                    href="index.html">
+                    href="/">
                         About Me
                     </a>
                 </li>
                 <li className="nav-item mx-1">
                     <a className="nav-link btn btn-dark"
-                    href="portfolio.html">
+                    href="/portfolio">
                         Portfolio
                     </a>
                 </li>
                 <li className="nav-item mx-1">
                     <a className="nav-link btn btn-dark"
-                    href="contact.html">
+                    href="/contact">
                         Contact Me
                     </a>
                 </li>
