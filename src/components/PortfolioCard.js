@@ -3,14 +3,15 @@ import LinkBtn from './LinkBtn';
 
 export default function PortfolioCard(props) {
     return (
-        <div className="card">
-            <CardImg item={props.item} />
-            <CardBody item={props.item} />
-            <CardFooter item={props.item} />
+        <div className="col py-1">
+            <div className="card h-100">
+                <CardImg item={props.item} />
+                <CardBody item={props.item} />
+                <CardFooter item={props.item} />
+            </div>
         </div>
     )
 }
-
 
 function CardImg(props) {
     // console.log(props.item.image.src)
