@@ -16,7 +16,7 @@ export default function Portfolio() {
             </div>
         </div>
         <div id="portfolio" class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-            {works.map((item) => <PortfolioCard work={item}/>)}
+            {works.map((item) => <PortfolioCard item={item}/>)}
         </div>
     </main>
 }
