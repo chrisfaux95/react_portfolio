@@ -4,7 +4,7 @@ import LinkBtn from './LinkBtn';
 export default function PortfolioCard(props) {
     return (
         <div className="col py-1">
-            <div className="card h-100">
+            <div className="card">
                 <CardImg item={props.item} />
                 <CardBody item={props.item} />
                 <CardFooter item={props.item} />
@@ -18,7 +18,7 @@ function CardImg(props) {
     return (
         <img className="card-img-top"
             alt={props.item.name}
-            src={`${process.env.PUBLIC_URL}/assets/images/{props.item.image.src}`}
+            src={`${process.env.PUBLIC_URL}/assets/images/${props.item.image.src}`}
         />
     )
 }

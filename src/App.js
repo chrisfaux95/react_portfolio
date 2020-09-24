@@ -5,12 +5,13 @@ import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import Wrapper from './components/Wrapper'
 import './App.css';
 
 function App() {
     return (
         <Router>
-            <main>
+            <Wrapper>
                 <Navbar />
                 <Switch>
                     <Route exact path="/" component={About} />
@@ -18,8 +19,8 @@ function App() {
                     <Route exact path="/portfolio" component={Portfolio} />
                     <Route exact path="/contact" component={Contact} />
                 </Switch>
-                <Footer />
-            </main>
+            </Wrapper>
+            <Footer />
         </Router>
     );
 }

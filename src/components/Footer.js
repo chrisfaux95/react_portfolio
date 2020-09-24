@@ -3,8 +3,7 @@ import React from 'react';
 export default function Footer() {
     return (
         <footer className="footer
-                   mt-1
-                   align-baseline
+                    my-2
                    bg-dark
                    text-light
                    text-center">
