@@ -8,16 +8,18 @@ import Footer from './components/Footer';
 import Wrapper from './components/Wrapper'
 import './App.css';
 
+const hdir = '/react_portfolio/'
+
 function App() {
     return (
         <Router>
             <Wrapper>
                 <Navbar />
                 <Switch>
-                    <Route exact path="/" component={About} />
-                    <Route exact path="/home" component={About} />
-                    <Route exact path="/portfolio" component={Portfolio} />
-                    <Route exact path="/contact" component={Contact} />
+                    <Route exact path={hdir} component={About} />
+                    <Route exact path={hdir + "home"} component={About} />
+                    <Route exact path={hdir + "portfolio"} component={Portfolio} />
+                    <Route exact path={hdir + "contact"} component={Contact} />
                 </Switch>
             </Wrapper>
             <Footer />
