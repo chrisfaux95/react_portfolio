@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-export default function Navbar() {
+export default function Navbar({ homeRoute }) {
     return (
         <nav className="mb-1
                 navbar
@@ -8,28 +9,19 @@ export default function Navbar() {
                 navbar-dark
                 bg-primary
                 sticky-top">
-            <a className="navbar-brand mb-1 h1"
-            href="index.html">
+            <Link className="navbar-brand mb-1 h1"
+                to={homeRoute}>
                 Chris Faux
-            </a>
+            </Link>
             <ul className="navbar-nav navbar-right ml-md-auto">
                 <li className="nav-item mx-1">
-                    <a className="nav-link btn btn-dark"
-                    href="/">
-                        About Me
-                    </a>
+                    <Link className="nav-link btn btn-dark" to={homeRoute}>About Me</Link>
                 </li>
                 <li className="nav-item mx-1">
-                    <a className="nav-link btn btn-dark"
-                    href="/portfolio">
-                        Portfolio
-                    </a>
+                    <Link className="nav-link btn btn-dark" to={homeRoute + "portfolio"}>Portfolio</Link>
                 </li>
                 <li className="nav-item mx-1">
-                    <a className="nav-link btn btn-dark"
-                    href="/contact">
-                        Contact Me
-                    </a>
+                    <Link className="nav-link btn btn-dark" to={homeRoute + "contact"}>Contact Me</Link>
                 </li>
             </ul>
         </nav>

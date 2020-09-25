@@ -3,7 +3,7 @@ import React from 'react';
 export default function Footer() {
     return (
         <footer className="footer
-                    my-2
+                    py-2
                    bg-dark
                    text-light
                    text-center">

@@ -14,7 +14,7 @@ function App() {
     return (
         <Router>
             <Wrapper>
-                <Navbar />
+                <Navbar homeRouter={hdir} />
                 <Switch>
                     <Route exact path={hdir} component={About} />
                     <Route exact path={hdir + "home"} component={About} />
