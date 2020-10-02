@@ -10,18 +10,15 @@ export default function Navbar({ homeRoute }) {
                 bg-primary
                 sticky-top">
             <Link className="navbar-brand mb-1 h1"
-                to={homeRoute}>
+                to="/">
                 Chris Faux
             </Link>
             <ul className="navbar-nav navbar-right ml-md-auto">
                 <li className="nav-item mx-1">
-                    <Link className="nav-link btn btn-dark" to={homeRoute}>About Me</Link>
+                    <Link className="nav-link btn btn-dark" to="/">About Me</Link>
                 </li>
                 <li className="nav-item mx-1">
-                    <Link className="nav-link btn btn-dark" to={homeRoute + "portfolio"}>Portfolio</Link>
-                </li>
-                <li className="nav-item mx-1">
-                    <Link className="nav-link btn btn-dark" to={homeRoute + "contact"}>Contact Me</Link>
+                    <Link className="nav-link btn btn-dark" to="portfolio">Portfolio</Link>
                 </li>
             </ul>
         </nav>

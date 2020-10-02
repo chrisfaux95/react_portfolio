@@ -12,14 +12,16 @@ const hdir = '/react_portfolio/'
 
 function App() {
     return (
-        <Router>
+        <Router basename="/react_portfolio">
             <Wrapper>
-                <Navbar homeRouter={hdir} />
+                <Navbar/>
                 <Switch>
-                    <Route exact path={hdir} component={About} />
-                    <Route exact path={hdir + "home"} component={About} />
-                    <Route exact path={hdir + "portfolio"} component={Portfolio} />
-                    <Route exact path={hdir + "contact"} component={Contact} />
+                    <Route path="/">
+                        <About />
+                    </Route>
+                    <Route path="/portfolio">
+                        <Portfolio />
+                    </Route>
                 </Switch>
             </Wrapper>
             <Footer />
