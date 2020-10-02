@@ -8,20 +8,21 @@ import Footer from './components/Footer';
 import Wrapper from './components/Wrapper'
 import './App.css';
 
-const hdir = '/react_portfolio/'
-
 function App() {
     return (
         <Router basename="/react_portfolio">
             <Wrapper>
-                <Navbar/>
+                <Navbar />
                 <Switch>
-                    <Route path="/">
-                        <About />
-                    </Route>
-                    <Route path="/portfolio">
-                        <Portfolio />
-                    </Route>
+                    <Route
+                        exact path="/"
+                        render={() => <About />}
+                    />
+                    <Route
+                        exact path="/portfolio"
+                        render={() => <Portfolio />}
+                    />
+
                 </Switch>
             </Wrapper>
             <Footer />
