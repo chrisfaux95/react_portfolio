@@ -11,7 +11,7 @@ export default function Contact() {
                 </div>
                 <div className="row py-4 mx-1">
                     <div className="col-md-3">
-                        <img src="http://placehold.it/150x150" alt="Chris Faux" className="img-thumbnail" />
+                        <img src={process.env.PUBLIC_URL + "assets/images/selfie"} alt="Chris Faux" className="img-thumbnail" />
                     </div>
                     <div className="col-md-8 mr-1">
                         <p>
