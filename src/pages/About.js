@@ -11,7 +11,7 @@ export default function Contact() {
                 </div>
                 <div className="row py-4 mx-1">
                     <div className="col-md-3">
-                        <img src={process.env.PUBLIC_URL + "assets/images/selfie.jpg"} alt="Chris Faux" className="img-thumbnail" />
+                        <img src={process.env.PUBLIC_URL + "assets/images/self.jpg"} alt="Chris Faux" className="img-thumbnail" />
                     </div>
                     <div className="col-md-8 mr-1">
                         <p>
@@ -22,7 +22,8 @@ export default function Contact() {
                             Email: chrisfaux95@gmail.com
                         </p>
                         <p>
-                            <LinkBtn src="https://github.com/chrisfaux95" name="Github"/>
+                            <LinkBtn src="https://github.com/chrisfaux95" name="Github" />
+                            <LinkBtn src="https://www.linkedin.com/in/christopher-faux/" name="LinkedIn" />
                         </p>
                     </div>
                 </div>
