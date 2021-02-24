@@ -12,7 +12,7 @@ export default function Contact() {
                 <div className="row py-4 mx-1">
                     <div className="col-md-3">
                         <img
-                            src={`${process.env.PUBLIC_URL}/assets/images/${"self.jpg"}`} alt="Chris Faux" className="img-thumbnail" />
+                            src={`${process.env.PUBLIC_URL}/assets/images/self.jpg`} alt="Chris Faux" className="img-thumbnail" />
 
                     </div>
                     <div className="col-md-8 mr-1">
